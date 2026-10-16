@@ -1,5 +1,5 @@
 from shipments import average_pallets
 
-pallet_counts = [8, 12, 10]
+pallet_counts = [8, 12, 10, 14]
 result = average_pallets(pallet_counts)
 print(f"Среднее число паллет на отгрузку: {result}")
