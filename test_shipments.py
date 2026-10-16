@@ -9,3 +9,7 @@ class AveragePalletsTests(unittest.TestCase):
 
     def test_empty_list(self):
         self.assertEqual(average_pallets([]), 0)
+
+    def test_negative_pallet_count(self):
+        with self.assertRaises(ValueError):
+            average_pallets([5, -2])
