@@ -1,0 +1,2 @@
+A commit saves changes locally.
+Push sends commits to GitHub.
