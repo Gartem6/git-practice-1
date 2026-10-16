@@ -1,0 +1,2 @@
+Shipment: one outgoing load.
+Pallet: a unit of cargo handling.
