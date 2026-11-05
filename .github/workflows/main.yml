@@ -20,3 +20,12 @@ jobs:
 
       - name: Run tests
         run: python -m unittest -v
+      - name: Generate documentation
+        run: python -m pydoc -w shipments report classification
+
+      - name: Upload documentation
+        uses: actions/upload-artifact@v7
+        with:
+          name: python-api-docs
+          path: "*.html"
+          if-no-files-found: error
